@@ -1,1 +1,15 @@
-!!!!!
+turn on:
+
+server:8080/on/1
+
+or
+
+server:8080/on/1,2,3,4
+
+turn off:
+
+server:8080/off/1
+
+or
+
+server:8080/off/1,2,3,4
