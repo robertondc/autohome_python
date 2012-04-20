@@ -24,3 +24,9 @@ def test_server_on_many_error():
 def test_server_off_many_error():
     assert str(server.off('b,2,3')) == "{'status': 'error'}"
 
+def test_server_on_uniq_range():
+    assert str(server.on('0')) == "{'status': 'error'}"
+
+def test_server_off_many_range():
+    assert str(server.off('1,2,3,4,5,9')) == "{'status': 'error'}"
+

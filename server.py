@@ -13,8 +13,9 @@ def off(comma_outs):
 def validate(outs):
     try:
         for out in outs:
-            int(out)
-    except:
+            if int(out) < 1 or int(out) > 8:
+                raise ValueError()
+    except ValueError:
          return False
     return True
 
